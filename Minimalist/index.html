@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Minimalist StartPage</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+		<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.css'>
+		<link rel="stylesheet" href="stylesheet.css">
+	</head>
+
+	<body>
+
+		<div id="date">
+			<p id="dateDisplay"></p>
+			<hr>
+			<p id="timeDisplay"></p>
+		</div>
+
+		<div id="searchDiv">
+
+			<!-- google search -->
+			<!-- <form method="GET" action="https://www.google.com/search">
+				<input type="text" name="q" autofocus>
+				<button type="submit" class="searchButton"><i class="fas fa-search fa-2x"></i></button>
+			</form> -->
+
+			<!-- duckduckgo search -->
+			<form method="GET" action="https://duckduckgo.com/?q=search">
+				<input type="text" name="q" autofocus>
+				<!-- duckduckgo params for theme search etc -->
+				<span id=duckduckgoParams>
+					<input type="hidden" name="kp" value="-2">
+					<input type="hidden" name="kc" value="1">
+					<input type="hidden" name="kf" value="fw">
+					<input type="hidden" name="kh" value="1">
+					<input type="hidden" name="kj" value="#5c6370">
+					<input type="hidden" name="ky" value="#61afef">
+					<input type="hidden" name="kx" value="#5c6370">
+					<input type="hidden" name="k7" value="#282c34">
+					<input type="hidden" name="k8" value="#ffffff">
+					<input type="hidden" name="k9" value="#61afef">
+					<input type="hidden" name="ks" value="t">
+					<input type="hidden" name="kw" value="s">
+					<input type="hidden" name="km" value="m">
+					<input type="hidden" name="k1" value="-1">
+					<input type="hidden" name="kaj" value="m">
+					<input type="hidden" name="kaf" value="1">
+					<input type="hidden" name="kae" value="d">
+					<input type="hidden" name="kam" value="google-maps">
+				</span>
+				<button type="submit" class="searchButton"><i class="fas fa-search fa-2x"></i></button>
+			</form>
+
+		</div>
+
+		<div id="icons">
+
+			<div class="container">
+				<i class="fab fa-reddit fa-2x icon categoryButton"></i>
+				<div class="hidden">
+					<a href="https://www.reddit.com" class="link">Reddit HomePage</a>
+					<a href="https://www.reddit.com/r/soccerstreams/" class="link">r/SoccerStreams</a>
+				</div>
+			</div>
+
+			<div class="container">
+				<i class="fas fa-code fa-2x icon categoryButton"></i>
+				<div class="hidden">
+					<a href="https://bitbucket.org/account/signin/" class="link">BitBucket</a>
+					<a href="https://github.com/login" class="link">GitHub</a>
+					<a href="https://c9.io/login" class="link">Cloud9 IDE</a>
+				</div>
+			</div>
+
+			<div class="container">
+				<i class="fas fa-toolbox fa-2x icon categoryButton" id="toolboxButton"></i>
+				<div class="hidden">
+					<p class="link" id="popUpColorsButton">
+						Colors
+						<div class="popup hidden" id="popUpColors">
+							<i class="fas fa-palette fa-3x"></i>
+							<a href="file:///D:/DevFiles/BitBucket/ColorsCheatSheet/index.html" class="link">My Colors</a>
+							<!-- LINK TO GitHub WHEN DONE -->
+							<a href="https://htmlcolorcodes.com/" class="link">HTML Color Codes</a>
+							<a href="https://uigradients.com/#Ohhappiness" class="link">uiGradients</a>
+							<a href="https://www.colorbox.io/" class="link">ColorBox</a>
+							<i class="far fa-times-circle fa-2x popupClose"></i>
+						</div>
+					</p>
+					<p class="link" id="popUpImagesButton">
+						Images
+						<div class="popup hidden" id="popUpImages">
+							<i class="fas fa-images fa-3x"></i>
+							<a href="https://unsplash.com/" class="link">Unsplash</a>
+							<a href="https://www.pexels.com/" class="link">Pexels</a>
+							<a href="https://pixabay.com/" class="link">PixaBay</a>
+							<a href="https://coolbackgrounds.io/" class="link">Cool Backgrounds</a>
+							<i class="far fa-times-circle fa-2x popupClose"></i>
+						</div>
+					</p>
+					<a href="https://fontawesome.com/icons?d=gallery&m=free" class="link">Font Awesome</a>
+					<a href="http://overapi.com/" class="link">OverApi</a>
+
+				</div>
+			</div>
+
+			<div class="container">
+				<i class="fas fa-graduation-cap fa-2x icon categoryButton"></i>
+				<div class="hidden">
+					<a href="https://www.khanacademy.org/" class="link">Khan Academy</a>
+					<a href="https://www.edx.org/course/cs50s-introduction-computer-science-harvardx-cs50x" class="link">CS50</a>
+					<a href="https://www.freecodecamp.com/" class="link">Free Code Camp</a>
+				</div>
+			</div>
+
+			<div class="container">
+				<i class="fa fa-wifi fa-2x icon categoryButton"></i>
+				<div class="hidden">
+					<a href="http://192.168.1.254/login.html" class="link">Bbox</a>
+					<a href="192.168.0.1/index.htm" class="link">D-Link Router</a>
+					<a href="http://192.168.1.11/rpi-startpage" class="link">RPI StartPage</a>
+				</div>
+			</div>
+
+		</div>
+
+		<script src="script.js"></script>
+
+	</body>
+
+</html>
